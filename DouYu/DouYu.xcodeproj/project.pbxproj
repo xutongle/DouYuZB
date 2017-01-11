@@ -11,6 +11,11 @@
 		1494D22A1E2627C7005B28A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1494D2281E2627C7005B28A9 /* Main.storyboard */; };
 		1494D22C1E2627C7005B28A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1494D22B1E2627C7005B28A9 /* Assets.xcassets */; };
 		1494D22F1E2627C7005B28A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1494D22D1E2627C7005B28A9 /* LaunchScreen.storyboard */; };
+		1494D2511E266F68005B28A9 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1494D24F1E266F68005B28A9 /* Home.storyboard */; };
+		1494D2591E267900005B28A9 /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1494D2571E267900005B28A9 /* Live.storyboard */; };
+		1494D25C1E267920005B28A9 /* Focus.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1494D25A1E267920005B28A9 /* Focus.storyboard */; };
+		1494D25F1E267936005B28A9 /* Discovery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1494D25D1E267936005B28A9 /* Discovery.storyboard */; };
+		1494D2621E267947005B28A9 /* Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1494D2601E267947005B28A9 /* Mine.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +25,11 @@
 		1494D22B1E2627C7005B28A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1494D22E1E2627C7005B28A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1494D2301E2627C7005B28A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1494D2501E266F68005B28A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DouYu/Base.lproj/Home.storyboard; sourceTree = SOURCE_ROOT; };
+		1494D2581E267900005B28A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DouYu/Base.lproj/Live.storyboard; sourceTree = SOURCE_ROOT; };
+		1494D25B1E267920005B28A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DouYu/Base.lproj/Focus.storyboard; sourceTree = SOURCE_ROOT; };
+		1494D25E1E267936005B28A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DouYu/Base.lproj/Discovery.storyboard; sourceTree = SOURCE_ROOT; };
+		1494D2611E267947005B28A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DouYu/Base.lproj/Mine.storyboard; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +64,6 @@
 			children = (
 				1494D2241E2627C7005B28A9 /* AppDelegate.swift */,
 				1494D2381E263067005B28A9 /* Classes */,
-				1494D2281E2627C7005B28A9 /* Main.storyboard */,
 				1494D22B1E2627C7005B28A9 /* Assets.xcassets */,
 				1494D22D1E2627C7005B28A9 /* LaunchScreen.storyboard */,
 				1494D2301E2627C7005B28A9 /* Info.plist */,
@@ -65,49 +74,28 @@
 		1494D2381E263067005B28A9 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				1494D2521E2678DE005B28A9 /* Discovery */,
+				1494D2531E2678DE005B28A9 /* Focus */,
+				1494D2541E2678DE005B28A9 /* Home */,
+				1494D2551E2678DE005B28A9 /* Live */,
+				1494D2561E2678DE005B28A9 /* Mine */,
 				1494D23C1E263067005B28A9 /* Main */,
-				1494D23A1E263067005B28A9 /* Home */,
-				1494D23B1E263067005B28A9 /* Live */,
-				1494D2391E263067005B28A9 /* Follow */,
-				1494D23D1E263067005B28A9 /* Profile */,
 				1494D23E1E263067005B28A9 /* Tools */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		1494D2391E263067005B28A9 /* Follow */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Follow;
-			sourceTree = "<group>";
-		};
-		1494D23A1E263067005B28A9 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		1494D23B1E263067005B28A9 /* Live */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Live;
-			sourceTree = "<group>";
-		};
 		1494D23C1E263067005B28A9 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				1494D2281E2627C7005B28A9 /* Main.storyboard */,
+				1494D2601E267947005B28A9 /* Mine.storyboard */,
+				1494D25D1E267936005B28A9 /* Discovery.storyboard */,
+				1494D25A1E267920005B28A9 /* Focus.storyboard */,
+				1494D2571E267900005B28A9 /* Live.storyboard */,
+				1494D24F1E266F68005B28A9 /* Home.storyboard */,
 			);
 			path = Main;
-			sourceTree = "<group>";
-		};
-		1494D23D1E263067005B28A9 /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Profile;
 			sourceTree = "<group>";
 		};
 		1494D23E1E263067005B28A9 /* Tools */ = {
@@ -115,6 +103,41 @@
 			children = (
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		1494D2521E2678DE005B28A9 /* Discovery */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Discovery;
+			sourceTree = "<group>";
+		};
+		1494D2531E2678DE005B28A9 /* Focus */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Focus;
+			sourceTree = "<group>";
+		};
+		1494D2541E2678DE005B28A9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		1494D2551E2678DE005B28A9 /* Live */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		1494D2561E2678DE005B28A9 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,9 +199,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1494D25F1E267936005B28A9 /* Discovery.storyboard in Resources */,
 				1494D22F1E2627C7005B28A9 /* LaunchScreen.storyboard in Resources */,
 				1494D22C1E2627C7005B28A9 /* Assets.xcassets in Resources */,
 				1494D22A1E2627C7005B28A9 /* Main.storyboard in Resources */,
+				1494D25C1E267920005B28A9 /* Focus.storyboard in Resources */,
+				1494D2591E267900005B28A9 /* Live.storyboard in Resources */,
+				1494D2511E266F68005B28A9 /* Home.storyboard in Resources */,
+				1494D2621E267947005B28A9 /* Mine.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +230,7 @@
 				1494D2291E2627C7005B28A9 /* Base */,
 			);
 			name = Main.storyboard;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		1494D22D1E2627C7005B28A9 /* LaunchScreen.storyboard */ = {
@@ -210,6 +239,46 @@
 				1494D22E1E2627C7005B28A9 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1494D24F1E266F68005B28A9 /* Home.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1494D2501E266F68005B28A9 /* Base */,
+			);
+			name = Home.storyboard;
+			sourceTree = "<group>";
+		};
+		1494D2571E267900005B28A9 /* Live.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1494D2581E267900005B28A9 /* Base */,
+			);
+			name = Live.storyboard;
+			sourceTree = "<group>";
+		};
+		1494D25A1E267920005B28A9 /* Focus.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1494D25B1E267920005B28A9 /* Base */,
+			);
+			name = Focus.storyboard;
+			sourceTree = "<group>";
+		};
+		1494D25D1E267936005B28A9 /* Discovery.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1494D25E1E267936005B28A9 /* Base */,
+			);
+			name = Discovery.storyboard;
+			sourceTree = "<group>";
+		};
+		1494D2601E267947005B28A9 /* Mine.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1494D2611E267947005B28A9 /* Base */,
+			);
+			name = Mine.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -317,6 +386,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.DouYu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -331,6 +401,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.DouYu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
