@@ -10,11 +10,20 @@ import Foundation
 import UIKit
 
 extension UIBarButtonItem {
-    convenience init(imgName: String, highLightImgName: String, size: CGSize){
+    convenience init(imgName: String, highLightImgName: String = "", size: CGSize = CGSize.zero){
         let btn = UIButton()
         btn.setImage(UIImage(named: imgName), for: .normal)
-        btn.setImage(UIImage(named: highLightImgName), for: .highlighted)
-        btn.frame = CGRect(origin: CGPoint.zero, size: size)
+        
+        if highLightImgName != ""{
+            btn.setImage(UIImage(named: highLightImgName), for: .highlighted)
+        }
+        
+        if size == CGSize.zero {
+            btn.sizeToFit()
+        }else{
+            btn.frame = CGRect(origin: CGPoint.zero, size: size)
+        }
+        
         self.init(customView: btn)
     }
 }
