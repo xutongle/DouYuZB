@@ -22,6 +22,7 @@
 		14C959991E2886EA00C01CCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14C959981E2886EA00C01CCD /* Main.storyboard */; };
 		14C9599B1E28B0A500C01CCD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C9599A1E28B0A500C01CCD /* HomeViewController.swift */; };
 		14C9599E1E28CC7200C01CCD /* UIBarButtonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C9599D1E28CC7200C01CCD /* UIBarButtonItem-Extension.swift */; };
+		14DCACCA1E54592500589049 /* ZContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DCACC91E54592500589049 /* ZContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		14C959981E2886EA00C01CCD /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		14C9599A1E28B0A500C01CCD /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		14C9599D1E28CC7200C01CCD /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
+		14DCACC91E54592500589049 /* ZContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				1403780E1E2CBA2C00A24B23 /* ZPageTitleView.swift */,
+				14DCACC91E54592500589049 /* ZContentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -392,6 +395,7 @@
 				14C9599B1E28B0A500C01CCD /* HomeViewController.swift in Sources */,
 				1403780F1E2CBA2C00A24B23 /* ZPageTitleView.swift in Sources */,
 				1403780D1E2CB45400A24B23 /* ZNavViewController.swift in Sources */,
+				14DCACCA1E54592500589049 /* ZContentView.swift in Sources */,
 				14C9599E1E28CC7200C01CCD /* UIBarButtonItem-Extension.swift in Sources */,
 				140378131E2CBFD200A24B23 /* Common.swift in Sources */,
 			);

@@ -14,3 +14,6 @@ let kNavBarH : CGFloat = 44;
 
 let kScreenW : CGFloat = UIScreen.main.bounds.size.width;
 let kScreenH : CGFloat = UIScreen.main.bounds.size.height;
+
+
+let kScrollLineH : CGFloat = 10;
