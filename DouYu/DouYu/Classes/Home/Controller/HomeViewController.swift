@@ -12,11 +12,28 @@ let kTitleViewH : CGFloat = 40
 
 class HomeViewController: UIViewController {
 
-    fileprivate lazy var pageTitleView : ZPageTitleView = {
+    fileprivate lazy var pageTitleView : ZPageTitleView = {[weak self] in
         let frame = CGRect(x: 0, y: kStatuBarH + kNavBarH, width: kScreenW, height: kTitleViewH)
         let view :ZPageTitleView = ZPageTitleView(frame: frame , titles: ["推荐", "手游", "娱乐", "游戏", "趣玩"])
-//        view.backgroundColor = UIColor.purple
+        view.delegate = self
         return view
+    }()
+    
+    
+    fileprivate lazy var contentView : ZContentView = {[weak self] in
+        let contentViewY = kStatuBarH + kNavBarH + kTitleViewH
+        let contentViewH = kScreenH - contentViewY
+        let frame = CGRect(x: 0, y: kStatuBarH + kNavBarH + kTitleViewH, width: kScreenW, height: contentViewH)
+        
+        var childVCs = [UIViewController]()
+        for _ in 0..<4{
+            let vc = UIViewController()
+            vc.view.backgroundColor = UIColor(r: CGFloat(arc4random_uniform(255)), g: CGFloat(arc4random_uniform(255)), b: CGFloat(arc4random_uniform(255)))
+            childVCs.append(vc)
+        }
+        
+        let contentView = ZContentView(frame: frame, viewControllers: childVCs, parentViewController: self)
+        return contentView
     }()
     
     override func viewDidLoad() {
@@ -39,6 +56,14 @@ extension HomeViewController {
         
         // 添加
         self.view.addSubview(pageTitleView)
+        
+        self.view.addSubview(contentView)
     }
 
+}
+
+extension HomeViewController : ZPageTitleViewDelegate{
+    func pageTitleView(_ pageTitleView: ZPageTitleView, didSelectedAtIndex index: Int){
+        self.contentView.setOffsetWithIndex(index: index)
+    }
 }

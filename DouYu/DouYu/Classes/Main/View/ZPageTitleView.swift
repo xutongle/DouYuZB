@@ -8,6 +8,11 @@
 
 import UIKit
 
+// :class 表示代理只能被类准守
+protocol ZPageTitleViewDelegate : class{
+    func pageTitleView(_ pageTitleView: ZPageTitleView, didSelectedAtIndex index: Int)
+}
+
 class ZPageTitleView: UIView {
 
     fileprivate lazy var scrollView : UIScrollView = {
@@ -24,7 +29,10 @@ class ZPageTitleView: UIView {
         return view
     }()
     
+    weak var delegate : ZPageTitleViewDelegate?
     fileprivate var titles : [String]
+    fileprivate var titleLables = [UILabel]()
+    fileprivate var currIndex : Int = 0
     
     init(frame: CGRect, titles: [String]){
         self.titles = titles
@@ -50,7 +58,7 @@ extension ZPageTitleView {
         
         // 设置title lable
         let labelW : CGFloat = frame.width/CGFloat(titles.count)
-        let labelH : CGFloat = frame.height - kScrollLineH
+        let labelH : CGFloat = frame.height /*- kScrollLineH*/
         let labelY : CGFloat = 0
         
         for (index, title) in titles.enumerated() {
@@ -61,13 +69,41 @@ extension ZPageTitleView {
             label.textAlignment = .center
             label.textColor = UIColor.darkGray
             label.frame = CGRect(x: labelW * CGFloat(index), y: labelY, width: labelW, height: labelH)
+            label.isUserInteractionEnabled = true
+            let gesture = UITapGestureRecognizer.init(target: self, action: #selector(titleLableClick(tapges:)))
+            label.addGestureRecognizer(gesture)
             scrollView.addSubview(label)
+            titleLables.append(label)
+            
+            if index==0 {
+                label.textColor = UIColor.orange
+            }
         }
         
         // 添加滑块
-        let viewHeight : CGFloat = 2
+        let viewHeight : CGFloat = 4
         
         indicatorView.frame = CGRect(x: 0, y: labelH - viewHeight, width: labelW, height: viewHeight)
         scrollView.addSubview(indicatorView)
+    }
+}
+
+
+extension ZPageTitleView {
+    @objc fileprivate func titleLableClick(tapges: UITapGestureRecognizer){
+        guard let label = tapges.view as? UILabel else { return }
+        
+        let selectedLab = titleLables[currIndex]
+        selectedLab.textColor = UIColor.darkGray
+        
+        label.textColor = UIColor.orange
+
+        currIndex = label.tag
+        
+        UIView.animate(withDuration: 0.2, animations: {
+            self.indicatorView.frame.origin.x = label.frame.width * CGFloat(self.currIndex);
+        })
+        
+        self.delegate?.pageTitleView(self, didSelectedAtIndex: currIndex)
     }
 }

@@ -10,6 +10,7 @@
 		1403780D1E2CB45400A24B23 /* ZNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1403780C1E2CB45400A24B23 /* ZNavViewController.swift */; };
 		1403780F1E2CBA2C00A24B23 /* ZPageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1403780E1E2CBA2C00A24B23 /* ZPageTitleView.swift */; };
 		140378131E2CBFD200A24B23 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140378121E2CBFD200A24B23 /* Common.swift */; };
+		1474A9751E553C3100B652FF /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1474A9741E553C3100B652FF /* UIColor-Extension.swift */; };
 		1494D2251E2627C7005B28A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1494D2241E2627C7005B28A9 /* AppDelegate.swift */; };
 		1494D22C1E2627C7005B28A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1494D22B1E2627C7005B28A9 /* Assets.xcassets */; };
 		1494D22F1E2627C7005B28A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1494D22D1E2627C7005B28A9 /* LaunchScreen.storyboard */; };
@@ -29,6 +30,7 @@
 		1403780C1E2CB45400A24B23 /* ZNavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZNavViewController.swift; sourceTree = "<group>"; };
 		1403780E1E2CBA2C00A24B23 /* ZPageTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZPageTitleView.swift; sourceTree = "<group>"; };
 		140378121E2CBFD200A24B23 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		1474A9741E553C3100B652FF /* UIColor-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 		1494D2211E2627C7005B28A9 /* DouYu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DouYu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1494D2241E2627C7005B28A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1494D22B1E2627C7005B28A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -309,6 +311,7 @@
 			isa = PBXGroup;
 			children = (
 				14C9599D1E28CC7200C01CCD /* UIBarButtonItem-Extension.swift */,
+				1474A9741E553C3100B652FF /* UIColor-Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -394,6 +397,7 @@
 				14C9597B1E28853200C01CCD /* ZTabBarViewController.swift in Sources */,
 				14C9599B1E28B0A500C01CCD /* HomeViewController.swift in Sources */,
 				1403780F1E2CBA2C00A24B23 /* ZPageTitleView.swift in Sources */,
+				1474A9751E553C3100B652FF /* UIColor-Extension.swift in Sources */,
 				1403780D1E2CB45400A24B23 /* ZNavViewController.swift in Sources */,
 				14DCACCA1E54592500589049 /* ZContentView.swift in Sources */,
 				14C9599E1E28CC7200C01CCD /* UIBarButtonItem-Extension.swift in Sources */,
